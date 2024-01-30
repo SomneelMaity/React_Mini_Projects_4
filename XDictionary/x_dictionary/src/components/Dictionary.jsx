@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
 export default function Diction() {
-  const dictionary = [
+  const [dictionary, setDictionary] = useState([
     {
       word: "React",
       meaning: "A JavaScript library for building user interfaces.",
     },
     { word: "Component", meaning: "A reusable building block in React." },
     { word: "State", meaning: "An object that stores data for a component." },
-  ];
+  ]);
 
   const [searchInput, setSearchInput] = useState("");
   const [result, setResult] = useState("");
